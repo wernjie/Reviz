@@ -1,0 +1,36 @@
+You can leave an instruction here. It won't be interpreted as questions, but will remain as the heading of the Q&A.
+An instruction should be ended with a line made of hyphens.
+
+Preferably, you can separate questions with two newlines so that it leaves a gap.
+
+Each question is formatted like so:
+<answer> |:| <question>
+
+
+If you would like to provide mcqs, you can list the options like so:
+<answer> |:| <question>
+<optionA>
+<optionB>
+<optionC>
+...
+
+(or)
+
+<answer> |:| <question> |:| <optionA> :: <optionB> :: <optionC> ...
+
+If you would like to ask the user to fill in a blank, you can type a "{}" to do so.
+
+Below are example questions. 
+-------------------------------
+
+C |:| What is the shape of the Earth?
+flat circle
+perfect sphere
+oblate spheroid
+it doesn't exist
+
+C |:| Do vaccines cause autism? |:| none of the below :: yes :: no :: none of the above
+
+am|:|I {} currently taking a self-revision test.
+
+

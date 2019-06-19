@@ -1,5 +1,5 @@
 # Reviz
-Python script to enable the use of text files as revision quizzes.
+Python script to enable the use of text files as revision quizzes. Works on Windows, macOS and Linux.
 
 ## What is this script for?
 This script takes an input file (plain text file; no fancy formats) with questions specified in a simple format and tests the user with the questions. It supports auto-grading and self-grading.
@@ -7,6 +7,8 @@ This script takes an input file (plain text file; no fancy formats) with questio
 Currently, only Fill-in-the-blank and Multiple-Choice Questions have been tested, but probably many other styles of questions can work :)
 
 ## Preparing an Input File
+You may refer to `exampleInput.txt` to see how an input file should look like.
+
 Questions can be specified in the following format:
 `<answer> |:| <question>`
 
