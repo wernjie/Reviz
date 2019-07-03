@@ -135,26 +135,26 @@ if correct != total:
     print("Here are the ones you got wrong:\n")
     if (test_mode == 1):
         for a, b in wrong:
-            qn = a.split(' |:| ')
-            print(qn[1].format("_"*blankLength))
+            qn = a.split('|:|')
+            print(qn[1].strip().format("_"*blankLength))
             if len(qn) > 2:
                 label = 'A'
-                for option in qn[2].split(" :: "):
-                    print("{}: {}".format(label, option))
+                for option in qn[2].strip().split("::"):
+                    print("{}: {}".format(label, option.strip()))
                     label = chr(ord(label)+1)
-            print("Answer:", qn[0])
-            print("Your answer:", b)
+            print("Answer:", qn[0].strip())
+            print("Your answer:", b.strip())
             print()
     else:
         for a in wrong:
-            qn = a.split(' |:| ')
-            print(qn[1].format("_"*blankLength))
+            qn = a.split('|:|')
+            print(qn[1].strip().format("_"*blankLength))
             if len(qn) > 2:
                 label = 'A'
-                for option in qn[2].split(" :: "):
-                    print("{}: {}".format(label, option))
+                for option in qn[2].strip().split("::"):
+                    print("{}: {}".format(label, option.strip()))
                     label = chr(ord(label)+1)
-            print("Answer:", qn[0])
+            print("Answer:", qn[0].strip())
             print()
     time.sleep(1)
         
